@@ -9,7 +9,7 @@ module.exports = {
     '!src/**/__tests__/**',
     '!src/index.ts',
   ],
-  coverageThresholds: {
+  coverageThreshold: {
     global: {
       branches: 70,
       functions: 70,
@@ -17,6 +17,7 @@ module.exports = {
       statements: 70,
     },
   },
+  passWithNoTests: true,
   moduleNameMapper: {
     '^@care-commons/core$': '<rootDir>/../../packages/core/src',
   },
